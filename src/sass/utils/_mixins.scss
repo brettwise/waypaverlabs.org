@@ -1,0 +1,40 @@
+// Button related mixins.
+// On hover color & background-color reverse for primary button style. Keeping it DRY!
+@mixin color-background-button($color, $background-color) {
+  background-color: $background-color;
+  border-color: $color;
+  color: $color;
+  transition: $fade;
+
+  &:hover {
+    background-color: $color;
+    color: $background-color;
+    transition: $fade;
+  }
+}
+
+// For secondary button style.
+@mixin secondary-button($color, $text-color, $amount) {
+  background-color: $color;
+  color: $text-color;
+  transition: $fade;
+
+  &:hover {
+    background-color: darken($color, $amount);
+    color: $text-color;
+    transition: $fade;
+  }
+}
+
+@mixin email-button($color, $amount) {
+  background-color: transparentize($color, $amount - 0.2);
+  border-color: $color;
+  color: $color;
+  transition: $fade;
+
+  &:hover {
+    background-color: transparentize($color, $amount);
+    color: $color;
+    transition: $fade;
+  }
+}

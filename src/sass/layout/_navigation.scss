@@ -1,9 +1,46 @@
-#navbar {
-    background-color: $black;
-	hr {
-		background-color: $blue;
-        border:0px;
-		color: $blue;
-        height: .4rem;
-	}
+#mobile-nav {
+  background-color: $transparent-black;
+
+  hr {
+    background-color: $blue;
+    border: 0;
+    color: $blue;
+    height: 0.4rem;
+  }
+}
+
+#desktop-nav {
+  margin-top: -20px;
+  min-height: 3rem;
+  background-color: $transparent-black;
+
+  p {
+    color: $white;
+    padding: 0.55rem 0 0 1rem;
+    text-transform: uppercase;
+
+    span {
+
+    }
+  }
+
+  li {
+    display: inline;
+    float: right;
+    padding-top: .6rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem
+  }
+
+  a {
+    color: $white;
+    font-size: 0.8rem;
+    transition: $fade;
+    text-transform: uppercase;
+
+    &:hover {
+      color: darken($white, 25%);
+      transition: $fade;
+    }
+  }
 }

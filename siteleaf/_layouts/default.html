@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% include 'includes/meta-general' %}
+    {% include 'includes/meta-twitter' %}
+    {% include 'includes/meta-open-graph' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="//use.typekit.net/jod2yyl.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      {% include 'includes/nav' %}
+      {{ content }}
+    </div>
+    <script src="js/vendor/classie.js"></script>
+    <script src="js/nav-overlay.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

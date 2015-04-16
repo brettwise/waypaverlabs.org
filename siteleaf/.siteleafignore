@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.git
+src/*.*
+gulp/*.*
+gulpfile.js
+node-modules/*.*
+package.json

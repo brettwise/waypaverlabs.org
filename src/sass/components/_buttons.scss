@@ -1,82 +1,97 @@
 button {
-	border-radius: 2px;
-	margin: 1rem .8rem 1rem 0;
-	text-transform: uppercase;
+  border-radius: 2px;
+  margin: 1rem .8rem 1rem 0;
+  text-transform: uppercase;
 }
+
 .menu {
-	border-style: solid;
-	border-width: 1px;
-	font-size: 1.1rem;
-	padding-top: .5rem;
-	padding-right: .6rem;
-	padding-left: .6rem;
-	padding-bottom: .5rem;
-	float: right;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1.1rem;
+  padding-top: .5rem;
+  padding-right: .6rem;
+  padding-left: .6rem;
+  padding-bottom: .5rem;
+  float: right;
 }
+
 .menu-button {
-	@extend .menu;
-	@include color-background-button($white, $black);
+  @extend .menu;
+  @include color-background-button($white, $black);
 }
+
 // This is only used as an extend in the primary style buttons below.
 .primary-button {
-	border-style: solid;
-	border-width: 1px;
-	font-size: 1.1rem;
-	padding-top: .75rem;
-	padding-right: 5.4rem;
-	padding-left: 5.4rem;
-	padding-bottom: .75rem;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1.1rem;
+  padding-top: .75rem;
+  padding-right: 5.4rem;
+  padding-left: 5.4rem;
+  padding-bottom: .75rem;
 }
+
 // These are the primary buttons.
 .blue-dark-background-button {
-	@extend .primary-button;
-	@include color-background-button($blue, $black);
+  @extend .primary-button;
+  @include color-background-button($blue, $black);
 }
+
 .white-dark-background-button {
-	@extend .primary-button;
-	@include color-background-button($white, $black);
+  @extend .primary-button;
+  @include color-background-button($white, $black);
 }
+
 .red-dark-background-button { 
-	@extend .primary-button;
-	@include color-background-button($red, $black); 
+  @extend .primary-button;
+  @include color-background-button($red, $black); 
 }
+
 .grey-dark-background-button {
-	@extend .primary-button;
-	@include color-background-button($grey, $black);
+  @extend .primary-button;
+  @include color-background-button($grey, $black);
 }
+
 .blue-light-background-button {
-	@extend .primary-button;
-	@include color-background-button($blue, $white);
+  @extend .primary-button;
+  @include color-background-button($blue, $white);
 }
+
 .black-light-background-button {
-	@extend .primary-button;
-	@include color-background-button($black, $white);
+  @extend .primary-button;
+  @include color-background-button($black, $white);
 }
+
 .red-light-background-button { 
-	@extend .primary-button;
-	@include color-background-button($red, $white); 
+  @extend .primary-button;
+  @include color-background-button($red, $white); 
 }
+
 .grey-light-background-button {
-	@extend .primary-button;
-	@include color-background-button($grey, $white);
+  @extend .primary-button;
+  @include color-background-button($grey, $white);
 }
+
 // These are only used in the secondary buttons below.
 .secondary-button {
-	font-size: 1rem;
-	padding: .6rem 1.5rem .6rem 1.5rem;
+  font-size: 1rem;
+  padding: .6rem 1.5rem .6rem 1.5rem;
 }
+
 // These are the secondary buttons.
 .grey-secondary-button {
-	@extend .secondary-button;
-	@include secondary-button($grey, $white, 10%);
+  @extend .secondary-button;
+  @include secondary-button($grey, $white, 10%);
 }
+
 .purple-secondary-button {
-	@extend .secondary-button;
-	@include secondary-button($purple, $white, 10%);
+  @extend .secondary-button;
+  @include secondary-button($purple, $white, 10%);
 }
+
 .yellow-secondary-button {
-	@extend .secondary-button;
-	@include secondary-button($yellow, $black, 10%);
+  @extend .secondary-button;
+  @include secondary-button($yellow, $black, 10%);
 }
 
 

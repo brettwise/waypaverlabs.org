@@ -1,52 +1,62 @@
 #footer {
-	background-color: $black;
-	color: $white;
-	padding-top: 1rem;
-	padding-bottom: 12rem;
-	width: 100%;
-	a {
-		color: $white;
-		text-transform: uppercase;
-	}
-	p {
-		font-weight: 100;
-		margin-bottom: 0;
-	}
-	hr {
-		background-color: $white;
-		height: 1px;
-		margin-top: 10px;
-	}
-	h6 {
-		color: $white;
-	}
-	ul {
-		margin-left: 3px;
-	}
-	li {
-		list-style-type: none;
-	}
-	#signup-form {
-		padding-top: 1rem;
-	}
-	input[type="email"] {
-	background-color: $black;
-	border-color: $blue;
-	border-radius: 2px 0px 0px 2px;
-	color: $blue;
-	font-size: 1rem;
-	&:focus {
-		background-color: $black;
-		font-family: $font-family-sans-serif;
-		}
-	}
-	#email-input::-webkit-input-placeholder {
-		color: $blue;
-		font-family: $font-family-sans-serif;
-	}
-	button {
-		border-radius: 0 2px 2px 0;
-		margin-top: 0px;
-		@include email-button($blue, .8)
-	}
+  background-color: $black;
+  color: $white;
+  padding-top: 1rem;
+  padding-bottom: 12rem;
+  width: 100%;
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  hr {
+    background-color: $white;
+    height: 1px;
+    margin-top: 10px;
+  }
+
+  h6 {
+    color: $white;
+  }
+
+  ul {
+    margin-left: 3px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #signup-form {
+    padding-top: 1rem;
+  }
+
+  input[type="email"] {
+  background-color: $black;
+  border-color: $blue;
+  border-radius: 2px 0 0 2px;
+  color: $blue;
+  font-size: 1rem;
+
+  &:focus {
+    background-color: $black;
+    font-family: $font-family-sans-serif;
+    }
+  }
+  #email-input::-webkit-input-placeholder {
+    color: $blue;
+    font-family: $font-family-sans-serif;
+  }
+
+  button {
+    border-radius: 0 2px 2px 0;
+    margin-top: 0;
+    @include email-button($blue, 0.8)
+  }
 }

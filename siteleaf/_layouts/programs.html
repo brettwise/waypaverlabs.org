@@ -1,5 +1,18 @@
 {% capture content %}
-  <h1>{{ title }}</h1>
+  <div class="row">
+    {% for page in pages %}
+      <div class="programs-section">
+        <div class="large-6 columns text-center">
+          <img src="{{page.meta['programs-page-icon']}}" alt="{{page.title}} icon">
+          <h6>{{page.title}}</h6>
+          <div style="min-height: 150px;">
+            {{page.body}}
+          </div>
+          <a href="{{page.url}}" class="button transparent-green-button">learn more</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 {% endcapture %}
 
 {% include 'layouts/default-page' %}

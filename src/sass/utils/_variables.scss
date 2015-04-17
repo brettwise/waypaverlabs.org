@@ -1,11 +1,12 @@
 // Colors
-$transparent-black: rgba(20, 20, 20, 0.9);
-$black: 	          rgb(20, 20, 20);
-$blue: 		          rgb(138, 213, 214);
-$grey: 		          rgb(112, 112, 112);
-$red: 		          rgb(224, 89, 36);
-$purple: 	          rgb(77, 21, 77);
-$white: 	          rgb(255, 255, 255);
-$yellow: 	          rgb(254, 17, 45);
+$fully-transparent:             rgba(0, 0, 0, 0);
+$transparent-black:             rgba(20, 20, 20, 0.9);
+$black:                         rgb(20, 20, 20);
+$light-green:                   rgb(138, 213, 214);
+$grey:                          rgb(112, 112, 112);
+$red:                           rgb(224, 89, 36);
+$purple:                        rgb(77, 21, 77);
+$white:                         rgb(255, 255, 255);
+$yellow:                        rgb(254, 17, 45);
 
-$fade:              0.5s all;
+$fade:                          0.5s all;

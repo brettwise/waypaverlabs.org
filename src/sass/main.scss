@@ -1,7 +1,21 @@
-@import 'vendor-manifest';
-@import 'utils/manifest';
-@import 'base/manifest';
-@import 'components/manifest';
-@import 'layout/manifest';
-@import 'pages/manifest';
+@import 'vendor/normalize-scss/normalize';
+@import 'foundation-settings';
+@import 'vendor/foundation/scss/foundation';
+
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/helpers';
+
+@import 'base/typography';
+@import 'base/shared';
+
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/nav-overlay';
+@import 'components/buttons';
+@import 'components/footer';
+@import 'components/hero';
+
+@import 'pages/index';
+
 @import 'utils/shame';

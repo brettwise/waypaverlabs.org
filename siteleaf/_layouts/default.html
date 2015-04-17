@@ -10,16 +10,19 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <script src="//use.typekit.net/jod2yyl.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/vendor/modernizr/modernizr.js"></script>
   </head>
   <body>
     <div id="content">
       {% include 'includes/nav' %}
+      {{ hero }}
       {{ content }}
     </div>
-    <script src="js/vendor/classie.js"></script>
-    <script src="js/nav-overlay.js"></script>
-    <script src="js/main.js"></script>
+    {% include 'includes/mobile-overlay-menu' %}  
+    {% include 'includes/footer' %}
+    <script src="/js/vendor/classie.js"></script>
+    <script src="/js/nav-overlay.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

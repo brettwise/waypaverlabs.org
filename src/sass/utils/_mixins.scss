@@ -7,8 +7,8 @@
   transition: $fade;
 
   &:hover {
-    background-color: $color;
-    color: $background-color;
+    background-color: transparentize($color, 0.8);
+    color: $color;
     transition: $fade;
   }
 }

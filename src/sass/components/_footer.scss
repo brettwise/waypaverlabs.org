@@ -1,5 +1,5 @@
-#footer {
-  background-color: $black;
+footer {
+  background:url(/images/footer-background.jpg) center center no-repeat; 
   color: $white;
   padding-top: 1rem;
   padding-bottom: 12rem;
@@ -39,9 +39,9 @@
 
   input[type="email"] {
   background-color: $black;
-  border-color: $blue;
+  border-color: $light-green;
   border-radius: 2px 0 0 2px;
-  color: $blue;
+  color: $light-green;
   font-size: 1rem;
 
   &:focus {
@@ -50,13 +50,13 @@
     }
   }
   #email-input::-webkit-input-placeholder {
-    color: $blue;
+    color: $light-green;
     font-family: $font-family-sans-serif;
   }
 
   button {
     border-radius: 0 2px 2px 0;
     margin-top: 0;
-    @include email-button($blue, 0.8)
+    @include email-button($light-green, 0.8)
   }
 }

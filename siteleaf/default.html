@@ -1,5 +1,59 @@
 {% capture content %}
+
+{% assign accelerator = site.pages['accelerator'] %}
+{% assign lunar_project = site.pages['lunar-project'] %}
+{% assign waypaver_university = site.pages['programs'].pages['waypaver-university'] %}
+{% assign speaker_series = site.pages['programs'].pages['speaker-series'] %}
+
   {% include 'includes/hero' %}
+  <div class="gradient-section">
+    <div class="row">
+      <div class="section-padding2">
+        <div class="large-4 medium-8 medium-centered large-uncentered columns text-center crazy-stuff">
+          <img src="/images/waves-vector.png" style="max-height: 118px;" alt="waves on graph">
+          <h4>{{ accelerator.title }}</h4>
+          <div class="height-200">
+            {{ accelerator.body }}
+          </div>
+          <a href="{{ accelerator.url }}" class="button transparent-white-button">learn more</a>
+        </div>
+        <div class="large-4 medium-8 medium-centered large-uncentered columns text-center side-borders crazy-stuff">
+          <img src="/images/circles-vector.png" style="max-height: 118px;" alt="crazy circles">
+          <h4>{{ lunar_project.title }}</h4>
+          <div class="height-200">
+            {{ lunar_project.body }}
+          </div>
+          <a href="{{ lunar_project.url }}" class="button transparent-white-button">learn more</a>
+        </div>
+        <div class="large-4 medium-8 medium-centered large-uncentered columns text-center crazy-stuff">
+          <img src="/images/arc-vector.png" style="max-height: 118px;" alt="arc on graph">
+          <h4>{{ waypaver_university.title }}</h4>
+          <div class="height-200">
+            {{ waypaver_university.body }}
+          </div>
+          <a href="{{ waypaver_university.url }}" class="button transparent-white-button">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h6 class="columns">Coming Up</h6>
+    {% for post in speaker_series.posts limit:2 %}
+    <div class="speaker-section">
+      <div class="large-6 columns">
+        <img src="{{post.meta['home-img']}}" alt="speaker's portrait">
+        <p>speaker series:</p>
+        <h4 class="speaker-name">{{post.title}}</h4>
+        <p class="details">{{post.meta['details']}}</p>
+        <div style="min-height: 170px;">
+          {{post.excerpt}}
+        </div>
+        <a href="{{post.meta['registration-link']}}" target="_blank" class="button transparent-green-button">register</a>
+        <a href="{{post.url}}" class="button transparent-green-button">learn more</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 {% endcapture %}
 
 {% include 'layouts/default' %}

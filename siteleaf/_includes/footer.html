@@ -1,0 +1,36 @@
+<footer>
+  <div class="row">
+    <div class="large-3 columns">
+      {% include 'includes/logo' %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-3 medium-6 columns">
+      <hr>
+      <p>800 Market Street</p>
+      <p>Chattnooga, TN</p>
+      <p>37403</p>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <hr>
+      {% include 'includes/page-links' %}
+    </div>
+    <div class="large-3 medium-6 columns">
+      <hr>
+      <h6>Sign Up Today</h6>
+      <p>Stay up-to-date with WayPaverLabs community and get updates about news and events.</p>
+      <form id="signup-form" role="form" onsubmit="return signup(this)" class="signup-form row collapse text-center">
+        <div class="small-8 columns">   
+          <input id="email-input" name="email" type="email" placeholder="Your Email" required="" class="form-control columns">
+        </div>
+        <div class="small-4 columns">    
+          <button id="signup-button" type="submit" class="postfix small-4 columns signup-button">Sign Me Up </button>
+        </div>
+      </form>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <hr>
+      <p>Connect with us</p>
+    </div>
+  </div>
+</footer>

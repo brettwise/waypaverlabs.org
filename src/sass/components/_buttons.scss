@@ -31,10 +31,20 @@ button {
   padding-bottom: .75rem;
 }
 
+.transparent-green-button {
+  @extend .primary-button;
+  @include color-background-button($light-green, $fully-transparent);
+}
+
+.transparent-white-button {
+  @extend .primary-button;
+  @include color-background-button($white, $fully-transparent);
+}
+
 // These are the primary buttons.
 .blue-dark-background-button {
   @extend .primary-button;
-  @include color-background-button($blue, $black);
+  @include color-background-button($light-green, $black);
 }
 
 .white-dark-background-button {
@@ -54,7 +64,7 @@ button {
 
 .blue-light-background-button {
   @extend .primary-button;
-  @include color-background-button($blue, $white);
+  @include color-background-button($light-green, $white);
 }
 
 .black-light-background-button {

@@ -1,5 +1,20 @@
 {% capture content %}
-  <h1>{{ title }}</h1>
+<div class="row">
+  <h5 class="text-center columns">Upcoming Speaker Series</h5>
+</div>
+{% for post in posts %}
+<a name="{{post.slug}}"></a>
+<div class="row">
+  <div class="medium-5 columns">
+    <img src="{{post.meta['post-img']}}" alt="{{post.title}}'s portrait">
+  </div>
+  <div class="medium-7 columns">
+    <h4>{{post.title}}</h4>
+    <h6>{{post.meta['details']}}</h6>
+    {{post.body}}
+  </div>
+</div>
+{% endfor %}
 {% endcapture %}
 
 {% include 'layouts/default-page' %}

@@ -48,7 +48,7 @@
           {{post.excerpt}}
         </div>
         <a href="{{post.meta['registration-link']}}" target="_blank" class="button transparent-green-button">register</a>
-        <a href="{{post.url}}" class="button transparent-green-button">learn more</a>
+        <a href="{{speaker_series.url}}#{{post.slug}}" class="button transparent-green-button">learn more</a>
       </div>
     </div>
     {% endfor %}

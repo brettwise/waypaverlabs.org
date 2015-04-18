@@ -1,5 +1,27 @@
+{% assign team = site.pages['about'].pages['team'] %}
+{% assign board= site.pages['about'].pages['board'] %}
+{% assign advisors = site.pages['about'].pages['advisors'] %}
+
 {% capture content %}
-  <h1>{{ title }}</h1>
+  <div class="row text-center">
+    <h5 class="columns">Our Team</h5>
+{% for post in team.posts %}
+  {% include 'includes/team-profile' %} 
+{% endfor %}
+  </div>
+  <div class="row text-center">
+    <h5 class="columns">Our Board</h5>
+{% for post in board.posts %}
+  {% include 'includes/team-profile' %}
+{% endfor %}
+  </div>
+  <div class="row text-center">
+    <h5 class="columns">Our Advisors</h5>
+{% for post in advisors.posts %}
+  {% include 'includes/team-profile' %}
+{% endfor %}
+  </div>
+  
 {% endcapture %}
 
 {% include 'layouts/default-page' %}

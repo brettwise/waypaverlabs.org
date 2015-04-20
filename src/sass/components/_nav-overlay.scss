@@ -32,7 +32,7 @@
   position: relative;
   top: 50%;
   height: 60%;
-  font-size: 54px;
+  font-size: 3rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -110,7 +110,7 @@
 @media screen and (max-height: 30.5em) {
   .overlay nav {
     height: 70%;
-    font-size: 34px;
+    font-size: 2rem;
   }
   .overlay ul li {
     min-height: 34px;

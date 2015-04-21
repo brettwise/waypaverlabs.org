@@ -1,7 +1,7 @@
 .hero-image {
   color: $white;
-  margin-top: -25px;
-  z-index: 1;
+  margin-top: -30px; // should be -67px to cover
+  z-index: 0;
 
   h1 {
     color: $white;

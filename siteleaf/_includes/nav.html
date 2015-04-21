@@ -1,7 +1,17 @@
-<div id="desktop-nav" class="show-for-large-up">
-  {% include 'includes/page-links' %}
-  {% include 'includes/logo' %}
-</div>
+<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1>
+        {% include 'includes/logo' %}
+      </h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      {% include 'includes/page-links' %}
+    </ul>
+  </section>
+</nav>
 <div id="mobile-nav" class="hide-for-large-up">
   <button id="trigger-overlay" class="menu-button">Menu &#x2261;</button>
   <hr>

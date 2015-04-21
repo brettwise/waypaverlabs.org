@@ -21,8 +21,15 @@
     </div>
     {% include 'includes/mobile-overlay-menu' %}  
     {% include 'includes/footer' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="/js/vendor/foundation/js/foundation.min.js"></script>
+    <script src="/js/vendor/foundation/js/foundation.topbar.js"></script>
     <script src="/js/vendor/classie.js"></script>
     <script src="/js/nav-overlay.js"></script>
     <script src="/js/main.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>

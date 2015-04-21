@@ -3,6 +3,7 @@
 {% assign advisors = site.pages['about'].pages['advisors'] %}
 
 {% capture content %}
+<div class="section-padding">
   <div class="row text-center">
     <h5 class="columns">Our Team</h5>
 {% for post in team.posts %}
@@ -21,6 +22,7 @@
   {% include 'includes/team-profile' %}
 {% endfor %}
   </div>
+</div>
   
 {% endcapture %}
 

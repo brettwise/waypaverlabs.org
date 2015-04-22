@@ -3,21 +3,21 @@
 {% assign advisors = site.pages['about'].pages['advisors'] %}
 
 {% capture content %}
-<div class="section-padding">
+<div class="section-padding profiles-section">
   <div class="row text-center">
-    <h5 class="columns">Our Team</h5>
+    <h4 class="columns sub-padding">Our Team</h4>
 {% for post in team.posts %}
   {% include 'includes/team-profile' %} 
 {% endfor %}
   </div>
   <div class="row text-center">
-    <h5 class="columns">Our Board</h5>
+    <h4 class="columns sub-padding">Our Board</h4>
 {% for post in board.posts %}
   {% include 'includes/team-profile' %}
 {% endfor %}
   </div>
   <div class="row text-center">
-    <h5 class="columns">Our Advisors</h5>
+    <h4 class="columns sub-padding">Our Advisors</h4>
 {% for post in advisors.posts %}
   {% include 'includes/team-profile' %}
 {% endfor %}

@@ -4,23 +4,25 @@
 
 {% capture content %}
 <div class="section-padding profiles-section">
-  <div class="row text-center">
+  <div class="row text-center sub-padding">
     <h4 class="columns sub-padding">Our Team</h4>
 {% for post in team.posts %}
   {% include 'includes/team-profile' %} 
 {% endfor %}
   </div>
-  <div class="row text-center">
-    <h4 class="columns sub-padding">Our Board</h4>
-{% for post in board.posts %}
-  {% include 'includes/team-profile' %}
-{% endfor %}
-  </div>
-  <div class="row text-center">
-    <h4 class="columns sub-padding">Our Advisors</h4>
-{% for post in advisors.posts %}
-  {% include 'includes/team-profile' %}
-{% endfor %}
+  <div class="grey-section section-padding">
+    <div class="row text-center">
+      <h4 class="columns sub-padding">Our Board</h4>
+  {% for post in board.posts %}
+    {% include 'includes/team-profile' %}
+  {% endfor %}
+    </div>
+    <div class="row text-center">
+      <h4 class="columns sub-padding">Our Advisors</h4>
+  {% for post in advisors.posts %}
+    {% include 'includes/team-profile' %}
+  {% endfor %}
+    </div>
   </div>
 </div>
   

@@ -11,3 +11,11 @@
 .is-current-page {
   color: $green;
 }
+
+.name {
+  max-width: 250px;
+
+  img {
+    margin: 13px 0 0 10px;
+  }
+}

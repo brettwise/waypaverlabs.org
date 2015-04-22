@@ -5,6 +5,8 @@ h2,
 h3 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
 }
 
 h4, 
@@ -12,4 +14,11 @@ h5,
 h6 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
 }

@@ -1,5 +1,14 @@
 {% capture content %}
-  <h1>{{ title }}</h1>
+<div class="gradient-section">
+  <div class="">
+    <div class="row section-padding">
+      <div class="columns text-center contact-section">
+        <h2>{{meta['blurb']}}</h2>
+        <a href="{{meta['contact-us-link']}}" class="button transparent-white-button">contact us</a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endcapture %}
 
 {% include 'layouts/default' %}

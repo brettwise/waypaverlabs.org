@@ -3,9 +3,14 @@
 }
 
 .top-bar-section {
-   li {
-      background: $fully-transparent !important; 
-   }
+
+  a {
+    letter-spacing: 1px;
+  }
+
+  li {
+    background: $fully-transparent !important; 
+  }
 }
 
 .is-current-page {

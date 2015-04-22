@@ -49,7 +49,9 @@
             </div>
             <a href="{{post.meta['registration-link']}}" target="_blank" class="button transparent-green-button">register</a>
             <a href="{{speaker_series.url}}#{{post.slug}}" class="button transparent-green-button">learn more</a>
-            <p>SHARE<a href="https://www.facebook.com/sharer/sharer.php?u={{site.permalink}}{{speaker_series.url}}#{{post.slug}}"><img src="/images/icons/green-facebook.png"></a><a href="https://twitter.com/home?status={{site.permalink}}{{speaker_series.url}}#{{post.slug}}"><img src="/images/icons/green-twitter.png"></a></p>
+            <div class="event-sharing">
+              <p>SHARE</p><a href="https://www.facebook.com/sharer/sharer.php?u={{site.permalink}}{{speaker_series.url}}#{{post.slug}}"><img src="/images/icons/green-facebook.png" class="icon"></a><a href="https://twitter.com/home?status={{site.permalink}}{{speaker_series.url}}#{{post.slug}}"><img src="/images/icons/green-twitter.png" class="icon"></a>
+            </div>
           </div>
         {% endfor %}
       </div>

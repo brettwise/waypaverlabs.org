@@ -59,3 +59,15 @@
 .float-right {
   float: right;
 }
+
+.lower-case {
+  text-transform: none;
+}
+
+
+.accelerator-icons {
+  background: $grey-background;
+  color: $grey;
+  padding: 2rem 0 0;
+  min-height: 270px;
+}

@@ -1,5 +1,10 @@
 {% capture content %}
-  <h1>{{ title }}</h1>
+<div class="row text-center section-padding">
+  <div class="medium-10 medium-centered columns">
+    <h2 class="lower-case">{{meta['blurb']}}</h2>
+    <a href="{{meta['application-link']}}" class="button transparent-green-button">Apply Now</a>
+  </div>
+</div>
 {% endcapture %}
 
 {% include 'layouts/default-page' %}

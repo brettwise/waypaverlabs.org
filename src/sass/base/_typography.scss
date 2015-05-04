@@ -1,7 +1,7 @@
 // A lot of the typography related things are defined in foundation-settings
 
 h1 {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 100;
@@ -25,7 +25,7 @@ h6 {
 
 p {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .small-text {
@@ -41,7 +41,7 @@ p {
 
   p {
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 1px;
     line-height: 1.3;
   }

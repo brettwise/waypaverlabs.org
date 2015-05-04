@@ -1401,7 +1401,7 @@ $topbar-link-color: $white;
 $topbar-link-color-hover: $green;
 $topbar-link-color-active: $green;
 $topbar-link-color-active-hover: $green;
-// $topbar-link-weight: $font-weight-normal;
+$topbar-link-weight: 100;
 $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $fully-transparent;

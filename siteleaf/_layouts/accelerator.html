@@ -1,7 +1,7 @@
 {% capture content %}
 <div class="row text-center section-padding">
   <div class="medium-10 medium-centered columns">
-    <h2 class="lower-case">{{meta['blurb']}}</h2>
+    <div class="lower-case">{{meta['blurb'] | markdown}}</div>
   </div>
 </div>
 <div class="row text-center section-padding">

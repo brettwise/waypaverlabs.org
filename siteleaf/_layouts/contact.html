@@ -2,8 +2,8 @@
 <div class="gradient-section">
   <div class="">
     <div class="row section-padding">
-      <div class="columns text-center contact-section">
-        <h2>{{meta['blurb']}}</h2>
+      <div class="columns text-center contact-section lower-case">
+        <div>{{meta['blurb'] | markdown}}</div>
         <a href="{{meta['contact-us-link']}}" class="button transparent-white-button">contact us</a>
       </div>
     </div>

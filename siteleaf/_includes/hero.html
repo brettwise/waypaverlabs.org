@@ -1,19 +1,21 @@
-<div class="hero-image" style="background:url({{meta['featured-img']}}) center center no-repeat fixed; background-size:cover">
-  <div class="row text-center hero-padding">
-    {% if home? %}
-      {% include 'includes/logo' %}
-      <br>
-      <br>
-    {% endif %}
-    {% unless slug == 'about' %}        
-      <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
-    {% endunless %}
-    <h1 {% if slug == 'accelerator' %}style="font-size: 2rem;"{% endif %}>{{ meta['headline'] }}</h1>
-    <div class="medium-6 medium-centered columns">
-      {{ body }}
+<div class="hero-image">
+  <div class="image-gradient" style="background:url({{meta['featured-img']}}) center center no-repeat fixed; background-size:cover;"> 
+    <div class="row text-center hero-padding">
+      {% if home? %}
+        {% include 'includes/logo' %}
+        <br>
+        <br>
+      {% endif %}
+      {% unless slug == 'about' %}        
+        <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
+      {% endunless %}
+      <h1 {% if slug == 'accelerator' %}style="font-size: 2rem;"{% endif %}>{{ meta['headline'] }}</h1>
+      <div class="medium-6 medium-centered columns">
+        {{ body }}
+      </div>
+      {% if home? %}
+      <a href="#facets" class="button transparent-green-button">{{ meta['button-text'] }}</a>
+      {% endif %}
     </div>
-    {% if home? %}
-    <a href="#facets" class="button transparent-green-button">{{ meta['button-text'] }}</a>
-    {% endif %}
   </div>
 </div>

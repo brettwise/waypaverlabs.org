@@ -5,7 +5,9 @@
       <br>
       <br>
     {% endif %}
-    <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
+    {% unless slug == 'about' %}        
+      <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
+    {% endunless %}
     <h1>{{ meta['headline'] }}</h1>
     <div class="medium-6 medium-centered columns">
       {{ body }}

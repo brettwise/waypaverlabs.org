@@ -1,1 +1,11 @@
+{% capture content %}
+<div class="row section-padding">
+  <div class="medium-10 columns text-center medium-centered section-padding">
+    {{meta['blurb'] | markdown }}
+    <div class="columns text-center medium-4 medium-centered">
+      <a href="{{meta['application-link']}}" class="button transparent-green-button expand">{{ meta['button-text'] }}</a>
+    </div>
+  </div>
+</div>
+{%endcapture %}
 {% include 'layouts/default-page' %}

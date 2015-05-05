@@ -1,6 +1,4 @@
 .menu {
-  border-style: solid;
-  border-width: 1px;
   float: right;
   padding: 0.5rem 0.6rem;
   margin: 0.5rem 0.5rem 0 0;
@@ -8,7 +6,7 @@
 
 .menu-button {
   @extend .menu;
-  @include color-background-button($white, $black);
+  @include color-background-button($white, $transparent-black);
 }
 
 // This is only used as an extend in the primary style buttons below.

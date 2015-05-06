@@ -1,0 +1,24 @@
+{% assign about = site.pages['about'] %}
+
+{% capture content %}
+<div class="hero-image" style="background:url({{about.meta['featured-img']}}) center center no-repeat fixed; background-size:cover">
+  <div class="row text-center hero-padding">
+    <h1>{{ about.meta['headline'] }}</h1>
+    <div class="medium-6 medium-centered columns">
+      {{ about.body }}
+    </div>
+  </div>
+</div>
+<div class="row section-padding">
+  <div class="medium-5 columns">
+    <img src="{{meta['post-img']}}" alt="{{title}}'s portrait">
+  </div>
+  <div class="medium-7 columns">
+    <h4>{{title}}</h4>
+    <h6>{{meta['details']}}</h6>
+    {{body}}
+  </div>
+</div>
+{% endcapture %}
+
+{% include 'layouts/default' %}

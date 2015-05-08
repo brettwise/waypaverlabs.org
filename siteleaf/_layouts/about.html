@@ -5,7 +5,9 @@
 {% capture content %}
 <div class="section-padding">
   <div class="row text-center">
-    {{meta['page-text']}}
+    <div class="medium-8 columns medium-centered">
+      {{meta['page-text'] | markdown }}
+    </div>
   </div>
 </div>
 <div class="profiles-section">

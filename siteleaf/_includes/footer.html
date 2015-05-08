@@ -19,16 +19,7 @@
     </div>
     <div class="large-3 medium-6 columns">
       <hr>
-      <h6>Sign Up Today</h6>
-      {{ site.meta['footer-signup-blurb'] }}
-      <form id="signup-form" role="form" onsubmit="return signup(this)" class="signup-form row collapse text-center">
-        <div class="small-8 columns">   
-          <input id="email-input" name="email" type="email" placeholder="Your Email" required="" class="form-control columns">
-        </div>
-        <div class="small-4 columns">    
-          <button id="signup-button" type="submit" class="postfix small-4 columns signup-button">Sign Me Up </button>
-        </div>
-      </form>
+      {{ site.meta['footer-blurb'] | markdown }}
     </div>
     <div class="large-3 medium-6 columns">
       <hr>

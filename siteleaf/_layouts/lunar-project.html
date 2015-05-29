@@ -9,6 +9,30 @@
     <a href="{{meta['application-link']}}" class="button transparent-green-button expand">{{meta['button-text']}}</a>
   </div>
 </div>
+<div class="section-padding-plus black-section">
+  <div class="row text-center">
+    <h4 class="medium-6 medium-centered title-underline columns">Where We Left Off</h4>
+    <div class="medium-8 columns medium-centered larger-paragraph-font">
+      {{meta['section-1'] | markdown }}
+    </div>
+  </div>
+</div>
+<div class="section-padding-plus">
+  <div class="row text-center">
+    <h4 class="medium-6 medium-centered title-underline columns">Getting There</h4>
+    <div class="medium-8 columns medium-centered larger-paragraph-font">
+      {{meta['section-2'] | markdown }}
+    </div>
+  </div>
+</div>
+<div class="section-padding-plus black-section">
+  <div class="row text-center">
+    <h4 class="medium-6 medium-centered title-underline columns">A Future For Everyone</h4>
+    <div class="medium-8 columns medium-centered larger-paragraph-font">
+      {{meta['section-3'] | markdown }}
+    </div>
+  </div>
+</div>
 {% endcapture %}
 
 {% include 'layouts/default-page' %}

@@ -4,13 +4,13 @@
 
 {% capture content %}
 <div class="section-padding">
-  <div class="row text-center">
-    <div class="medium-8 columns medium-centered">
-      {{meta['page-text'] | markdown }}
+  <div class="profiles-section">
+    <div class="row text-center">
+      <h4 class="medium-6 medium-centered title-underline columns">Our Mission</h4>
+      <div class="medium-8 columns medium-centered">
+        {{meta['page-text'] | markdown }}
+      </div>
     </div>
-  </div>
-</div>
-<div class="profiles-section">
   <div class="section-padding row text-center sub-padding">
     <h4 class="medium-6 medium-centered title-underline columns">Our Team</h4>
 {% for post in team.posts %}

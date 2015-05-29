@@ -1,12 +1,30 @@
 {% capture content %}
 <div class="row text-center section-padding">
   <div class="medium-10 medium-centered columns">
-    <div class="lower-case">{{meta['blurb'] | markdown}}</div>
+    <div class="lower-case larger-paragraph-font">
+      {{meta['blurb'] | markdown}}
+    </div>
   </div>
 </div>
-<div class="row section-padding">
+<div class="row padding-bottom">
   <div class="columns text-center medium-4 medium-centered">
     <a href="{{meta['application-link']}}" class="button transparent-green-button expand">{{ meta['button-text'] }}</a>
+  </div>
+</div>
+<div class="section-padding-plus black-section">
+  <div class="row text-center">
+    <h4 class="medium-6 medium-centered title-underline columns">What We're Looking For</h4>
+    <div class="medium-8 columns medium-centered larger-paragraph-font">
+      {{meta['section-1'] | markdown }}
+    </div>
+  </div>
+</div>
+<div class="section-padding-plus">
+  <div class="row text-center">
+    <h4 class="medium-6 medium-centered title-underline columns">What We're Offering</h4>
+    <div class="medium-8 columns medium-centered larger-paragraph-font">
+      {{meta['section-2'] | markdown }}
+    </div>
   </div>
 </div>
 {% endcapture %}

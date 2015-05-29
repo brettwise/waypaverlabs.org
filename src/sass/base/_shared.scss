@@ -130,3 +130,13 @@
     font-size: 1.3rem;
   }
 }
+
+.black-section {
+  background-color: $black;
+  color: $white;
+
+  h4 {
+    border-bottom-color: $green;
+    color: $white;
+  }
+}

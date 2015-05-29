@@ -4,7 +4,10 @@
     <div class="row section-padding">
       <div class="columns text-center contact-section lower-case">
         <div>{{meta['blurb'] | markdown}}</div>
-        <a href="{{meta['contact-us-link']}}" class="button transparent-white-button">{{ meta['button-text'] }}</a>
+        <a href="{{meta['contact-us-link']}}" data-mode="1" target="_blank" class="typeform-share button transparent-white-button">{{ meta['button-text'] }}</a>
+        <script>
+        (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        </script>
       </div>
     </div>
   </div>

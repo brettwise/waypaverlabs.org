@@ -12,20 +12,22 @@
 </div>
 <div class="profiles-section">
   <div class="section-padding row text-center sub-padding">
-    <h4 class="columns sub-padding">Our Team</h4>
+    <h4 class="medium-6 medium-centered title-underline columns">Our Team</h4>
 {% for post in team.posts %}
   {% include 'includes/team-profile' %} 
 {% endfor %}
   </div>
   <div class="section-padding grey-section section-padding">
     <div class="row text-center">
-      <h4 class="columns sub-padding">Our Board</h4>
+      <h4 class="medium-6 medium-centered title-underline columns">Our Board</h4>
   {% for post in board.posts %}
     {% include 'includes/team-profile' %}
   {% endfor %}
     </div>
+  </div>
+  <div class="section-padding section-padding">
     <div class="row text-center">
-      <h4 class="columns sub-padding">Our Advisors</h4>
+      <h4 class="medium-6 medium-centered title-underline columns">Our Advisors</h4>
   {% for post in advisors.posts %}
     {% include 'includes/team-profile' %}
   {% endfor %}

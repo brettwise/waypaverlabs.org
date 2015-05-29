@@ -1,5 +1,8 @@
 .hero-padding {
-  padding: 20vh 0;
+  padding: 10rem 0 4rem;
+  @media #{$small-only} {
+    padding: 5rem 0 4rem;
+  }
 }
 
 .gradient-section {

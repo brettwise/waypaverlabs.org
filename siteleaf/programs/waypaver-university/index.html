@@ -1,9 +1,10 @@
 {% capture content %}
 <div class="row section-padding">
   <div class="medium-8 columns text-center medium-centered section-padding larger-paragraph-font">
-    {{meta['blurb'] | markdown }}
+    <h3 class="blurb">{{ meta.blurb }}</h3>
+    <br><br>
     <div class="columns text-center medium-4 medium-centered">
-      <a href="{{meta['application-link']}}" class="button transparent-green-button expand">{{ meta['button-text'] }}</a>
+      <a href="{{meta['application-link']}}" class="button transparent-green-button expand">{{ meta.button-text }}</a>
     </div>
   </div>
 </div>

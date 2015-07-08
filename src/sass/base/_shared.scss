@@ -89,6 +89,7 @@
 }
 
 .lower-case {
+  text-transform: none;
 
   h1,
   h2,
@@ -158,4 +159,12 @@
     border-bottom-color: $green;
     color: $white;
   }
+}
+
+.blurb {
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
 }

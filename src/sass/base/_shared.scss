@@ -5,6 +5,13 @@
   }
 }
 
+.image-gradient {
+
+  @media #{$medium-up} {
+    min-height: 700px;
+  }
+}
+
 .gradient-section {
   color: $white;
 
@@ -60,7 +67,7 @@
   }
 
   img {
-    max-height: 20px; 
+    max-height: 20px;
   }
 }
 
@@ -100,9 +107,13 @@
     color: $white;
   }
 }
-    
+
 .featured-icon {
   max-width: 220px;
+
+  @media #{$medium-up} {
+    padding-top: 100px;
+  }
 }
 
 .programs-icon {

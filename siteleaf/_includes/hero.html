@@ -1,14 +1,12 @@
 <div class="hero-image">
-  <div class="image-gradient" style="background:url({{meta['featured-img']}}) center center no-repeat fixed; background-size:cover;"> 
+  <div class="image-gradient" style="background:url({{meta['featured-img']}}) center center no-repeat fixed; background-size:cover;">
     <div class="row text-center hero-padding">
       {% if home? %}
         {% include 'includes/logo' %}
         <br>
         <br>
       {% endif %}
-      {% unless slug == 'about' %}        
-        <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
-      {% endunless %}
+      <img src="{{meta['featured-icon']}}" alt="featured icon" class="featured-icon">
       <h1 {% if slug == 'accelerator' %}style="font-size: 2rem;"{% endif %}>{{ meta['headline'] }}</h1>
       <div class="medium-6 medium-centered columns">
         {{ body }}

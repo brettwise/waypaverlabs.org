@@ -7,3 +7,4 @@ siteleaf/js/*
 siteleaf/images/*
 src/sass/vendor/*
 src/js/vendor/*
+siteleaf/.ruby-version
